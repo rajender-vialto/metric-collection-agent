@@ -56,7 +56,6 @@ namespace Vialto_DataCollector_Agent
             metrics.Total = Math.Round(double.Parse(totalMemoryParts[1]) / 1024, 0);
             metrics.Free = Math.Round(double.Parse(freeMemoryParts[1]) / 1024, 0);
             metrics.Used = metrics.Total - metrics.Free;
-
             return metrics;
         }
 
